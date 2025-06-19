@@ -5,7 +5,7 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 
-namespace NewMod
+namespace AVOptions
 {
   [BepInPlugin(PluginGUID, PluginName, PluginVersion)]
   public class Main : BaseUnityPlugin
@@ -26,9 +26,6 @@ namespace NewMod
 
       Log.Init(Logger);
       // LoadAssets();
-
-      PluginDirectory = Path.GetDirectoryName(Info.Location);
-      LanguageFolderHandler.Register(PluginDirectory);
 
       stopwatch.Stop();
       Log.Info_NoCallerPrefix($"Initialized in {stopwatch.Elapsed.TotalSeconds:F2} seconds");
