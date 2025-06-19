@@ -1,24 +1,60 @@
-# New Mod
+# SOTS AV Effect Options
 
-A template for a Risk of Rain 2 mod.
+This is an update of https://thunderstore.io/package/TeamNinjaDSM/JPs_AV_Effect_Options/
 
-There's now language file support, easy thunderstore build packaging, proper logging, an open-source license, and a tutorial.
+Below is the copied README
 
-*Disclaimer: I mainly use VSCode, Visual Studio is better suited for these projects but I like my themes.*
+This was a pseudo-fork of https://gitlab.com/lexxyfox/ror2-av-effect-options
 
-**Credits to [Goorakh](https://github.com/Goorakh) for most of the project structure.**
+## About
 
-### Quickstart
+The goal is to allow players to selectively disable in-game audio-visual effects that aren't strictly necessary to enjoy the game without changing game mechanics or balance. This may assist people who, among others; have photosensitivity, are sensitive to sensory overstimulation, or have limited computing resources. Effects can [usually] be toggled mid-stage.
 
-1. On the GitHub repo, select the `Use this template` button then click `Create a new repository`. Or clone/download the repo.
-2. Change the `NewMod.sln` and `NewMod.csproj` filenames to your mod's name
-3. Inside of `NewMod.sln`, change any instance of "NewMod" to your mod's name `NewMod", "NewMod\NewMod.csproj`
-4. Change the `NewMod` folder name to your mod's name
-5. Inside of `LanguageFolderHandler.cs`, `Log.cs`, and `Main.cs` change the namespace from `NewMod` to your mod's name
-6. Inside of the `Log.cs` file, find this code line `const string MOD_NAME = nameof(NewMod);` and replace `NewMod` with your mod's name
-7. Inside of `Main.cs`, change the `PluginAuthor` to your Thunderstore team name (sign into thunderstore and create a team), change the `PluginName` to the mod name, and `PluginVersion` to whatever version you're launching.
-8. Inside of `License.txt` change `Nuxlar` to whatever you go by online (don't dox yourself and upload it to GitHub please)
-9. Fill in the `manifest.json` with your mod info, you can leave the `website_url` blank or add a link to the GitHub issues tab of your repo
-10. Build the project
-    - In Visual Studio, you just right click the solution or csproj and click `rebuild`
-    - In VSCode, open a terminal at the root of your mod project and run `dotnet build --configuration Debug` or `dotnet build --configuration Release` if you're ready to publish to Thunderstore (you do need the dotnet sdk installed)
+Intended for headed client-side installations. [Should] have no effect on headless installations.
+
+### Currently configurable
+
+- Blast Shower's effects
+- Brainstalks's screen effect
+- Frost Relic particles and FOV change
+- Gasoline's explosion
+- Interstellar Desk Plant's indicator ward particle effects
+- Kjaro's Band tornado
+- Molten Perferators
+- Runald's Band explosion
+- Shatterspleen explosion
+- Spinel Tonic's screen effect
+- Sticky Bomb's drops & explosion
+- Stone Titan's death effect
+- Wandering Vagrant's death explosion
+- Weeping Fungus' effects
+- Will-o'-the-Wisp explosion
+- Plasma Shrimp AV effects
+
+## Configuring
+
+Once this mod is installed, just press ESC in your game client and go to SETTINGS. Risk Of Options will have a tab there where all items have toggles.
+
+Use [Rune580's Risk of Options](https://thunderstore.io/package/Rune580/Risk_Of_Options)
+![Risk of Options](https://github.com/tlsJP/ror2-av-effect-options/blob/main/screenshot.png)
+
+## Credits
+
+These good people/beings did me a help one way or another, but don't necessarily endorse or condone myself or this mod.
+
+- Hopoo Games
+- [The Mono Project](https://www.mono-project.com)
+- [The BepInEx developers](https://github.com/BepInEx/BepInEx/graphs/contributors)
+- [ebkr](https://github.com/ebkr) [et alia](https://github.com/ebkr/r2modmanPlus/graphs/contributors) for [r2modman Plus](https://thunderstore.io/package/ebkr/r2modman)
+- The Thunderstore
+- [Rune580](https://github.com/Rune580) for [Risk of Options](https://thunderstore.io/package/Rune580/Risk_Of_Options)
+- [Vl4dimyr](https://github.com/Vl4dimyr) for their [mod](https://thunderstore.io/package/Vl4dimyr/CaptainShotgunModes) (pictured)
+- Bon Yok
+- [RoR2 Modding Wiki](https://github.com/risk-of-thunder/R2Wiki)
+- YOU! For existing today :3
+
+## Notes
+
+- Xamarin's xbuild is not compatible with this mod, and will not be supported by me. (msbuild > xbuild)
+- This mod is **NOT** guaranteed to come with a virus.
+- I'm not a .NET/C# developer, so there's a good argument to be made that I have no idea what I'm doing
